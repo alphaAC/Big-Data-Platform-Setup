@@ -2,18 +2,18 @@
 
 virtualbox version  >>>  4.3.30   ubuntu version  >>>  14.04.3
   
-1.$sudo apt-get update  //apt get應用程式取得 update全部linux有更新的都抓
+1.$sudo apt-get update  #apt get應用程式取得 update全部linux有更新的都抓
 2.$sudo apt-get upgrade  
 3.$sudo apt-get install vim  
-4.$sudo apt-get install openjdk-7-jdk (http://openjdk.java.net/install)  
-5.$sudo apt-get install openssh-server  //要更新才會有
-6.$ssh-keygen -t rsa -P "" (and just press enter)  //key generate""空字串代表不需要密碼ㄇ
-7.$cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys  //>>是寫入，把空字串這個密碼傳進某個文件檔,cat把資料全部顯示
+4.$sudo apt-get install openjdk-7-jdk (http:#openjdk.java.net/install)  
+5.$sudo apt-get install openssh-server  #要更新才會有
+6.$ssh-keygen -t rsa -P "" (and just press enter)  #key generate""空字串代表不需要密碼ㄇ
+7.$cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys  #>>是寫入，把空字串這個密碼傳進某個文件檔,cat把資料全部顯示
 8.$ssh localhost (type "yes")  login without key  
 9.$exit  
-13.$wget http://ftp.twaren.net/Unix/Web/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz   //wget是外部
-   (Other version : http://ftp.twaren.net/Unix/Web/apache/hadoop/common/)  
-14.$tar xfz hadoop-2.7.3.tar.gz  //tar是解壓縮
+13.$wget http:#ftp.twaren.net/Unix/Web/apache/hadoop/common/hadoop-2.7.3/hadoop-2.7.3.tar.gz   #wget是外部package
+   (Other version : http:#ftp.twaren.net/Unix/Web/apache/hadoop/common/)  
+14.$tar xfz hadoop-2.7.3.tar.gz  #tar是解壓縮
 15.$sudo mv hadoop-2.7.3 hadoop  
 16.$sudo vim ~/.bashrc  
 ```
@@ -42,7 +42,7 @@ export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
+        <value>hdfs:#localhost:9000</value>
     </property>
 </configuration>
 ```
@@ -75,10 +75,10 @@ export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 </configuration>
 ```  
 25.$cd
-26.$hadoop namenode -format  //namenode = master node
-27.$start-dfs.sh (type “yes”)  //dfs: distributed file system
-28.$start-yarn.sh   //yarn: cluster manager
-29.$jps  //list out services
+26.$hadoop namenode -format  #namenode = master node!!error command not found
+27.$start-dfs.sh (type “yes”)  #dfs: distributed file system
+28.$start-yarn.sh   #yarn: cluster manager
+29.$jps  #list out services
  
 
 If it returns ResourceManager、Jps、DataNode、SecondaryNameNode、NodeManager and NameNode, then you are done.
