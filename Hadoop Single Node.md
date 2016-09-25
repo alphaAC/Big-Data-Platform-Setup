@@ -2,7 +2,7 @@
 
 virtualbox version  >>>  4.3.30   ubuntu version  >>>  14.04.3
   
-1.$sudo apt-get update  #apt get應用程式取得 update全部linux有更新的都抓\n
+1.$sudo apt-get update  #apt get應用程式取得 update全部linux有更新的都抓
 2.$sudo apt-get upgrade  
 3.$sudo apt-get install vim  
 4.$sudo apt-get install openjdk-7-jdk (http:#openjdk.java.net/install)  
